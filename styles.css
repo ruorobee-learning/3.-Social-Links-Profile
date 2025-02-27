@@ -9,7 +9,7 @@
 
 /* Root Variables */
 :root {
-    --color-green: #C4F82A;
+    --color-yellow: #FFD25A;
     --color-gray-950: #141414;
     --color-gray-800: #1F1F1F;
     --color-gray-700: #333333;
@@ -92,7 +92,7 @@ body {
 }
 
 .user-location {
-    color: var(--color-green);
+    color: var(--color-yellow);
     text-align: center;
     font-size: var(--font-size-2);
     font-weight: 600;
@@ -120,7 +120,6 @@ body {
 .button {
     display: flex;
     width: 100%;
-    padding: var(--spacing-120) var(--spacing-80);
     justify-content: center;
     align-items: center;
     gap: var(--spacing-80);
@@ -130,17 +129,23 @@ body {
     cursor: pointer;
 }
 
-.button:hover {
-    background: var(--color-green);
-    transform: translateY(-2px);
-}
-
 .button a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: var(--color-white);
     font-size: var(--font-size-2);
     font-weight: 700;
     line-height: 150%;
+    padding: var(--spacing-120) var(--spacing-80); 
+}
+
+.button:hover {
+    background: var(--color-yellow);
+    transform: translateY(-2px);
 }
 
 .button:hover a {
